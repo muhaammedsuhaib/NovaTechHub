@@ -11,7 +11,6 @@ export default function Home() {
           alt="NovaTechHub Logo"
           width={180}
           height={37}
-          priority
         />
       </div>
     </main>
