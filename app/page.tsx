@@ -14,10 +14,12 @@ export default function Home() {
       <div className="text-start mx-auto">
         <img src="/LogoWhitebr.png" alt="NovaTechHub Logo" className="p-5" width={140} height={'auto'} />
         <h1 className={styles.title}>NovaTechHub <br /> CodeMaster</h1>
-        <button className={`${styles.button} mt-8 ml-6`}>
+
+        <div className="button-container mt-8">
+        <button className={`${styles.button} ml-6`}>
           <img src="/LogoBluebr.png" alt="Icon" className="w-10 h-10" />
           <span className={styles.buttonText}>Get Started</span>
-        </button>
+        </button></div>
       </div>
     </main>
   );
