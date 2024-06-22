@@ -1,18 +1,18 @@
 import React from 'react';
-
+import styles from './Home.module.css';
 export default function Home() {
   return (
     <main
-      className="container w-full min-h-screen flex items-center justify-center"
+      className="container w-full min-h-screen"
       style={{
         backgroundImage: `url('/Home.png')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center', // Center the background image
       }}
     >
-      <div className="text-center">
-        <img src="/LogoWhite.png" alt="NovaTechHub Logo" className="mb-4 mx-auto" width={180} height={37} />
-        <h1 className="text-4xl font-bold text-white">NovaTechHub</h1>
+      <div className="text-start mx-auto">
+        <img src="/LogoWhitebr.png" alt="NovaTechHub Logo" className="p-5" width={140} height={'auto'} />
+        <h1 className={styles.title}>NovaTechHub <br /> CodeMaster</h1>
       </div>
     </main>
   );
