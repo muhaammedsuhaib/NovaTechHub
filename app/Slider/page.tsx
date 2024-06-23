@@ -7,7 +7,7 @@ const LogoSlider = () => {
         <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-transparent to-white"></div>
         
         <div className="logo_items whitespace-nowrap animate-slides">
-          {[...Array(25)].map((_, index) => (
+          {[...Array(25)].map((data,index) => (
             <img
               key={index}
               src="https://navneetdwivedi.github.io/Logo_Slider/logo.png"
