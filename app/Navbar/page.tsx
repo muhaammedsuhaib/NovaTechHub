@@ -11,13 +11,12 @@ import {
   MenuItems,
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import LogoSlider from "../Slider/page";
 
 const navigations = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  // { name: "Dashboard", href: "#", current: true },
+  // { name: "Team", href: "#", current: false },
+  // { name: "Projects", href: "#", current: false },
+  // { name: "Calendar", href: "#", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -45,7 +44,7 @@ export default function Navbar() {
   };
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -66,7 +65,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-auto w-11"
-                    src="/LogoBluebr.png"
+                    src="/LogoBlackbr.png"
                     alt="Your Company"
                   />
                 </div>
@@ -91,7 +90,7 @@ export default function Navbar() {
                   <form onSubmit={handleSubmit} className="relative w-72">
                     <input
                       type="text"
-                      className="block w-full rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-1"
+                      className="block w-full rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-1 mt-1"
                       placeholder="Search..."
                       value={searchTerm}
                       onChange={handleSearchChange} // Update state as user types
@@ -102,7 +101,7 @@ export default function Navbar() {
                         name="currency"
                         value={selectedOption}
                         onChange={handleDropdownChange}
-                        className="h-full w-8 rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                        className=" w-8 rounded-md border-0  bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-transparent sm:text-sm"
                       >
                         <option>HTML</option>
                         <option>CSS</option>
@@ -201,7 +200,6 @@ export default function Navbar() {
               ))}
             </div>
           </DisclosurePanel>
-          <LogoSlider/>
         </>
       )}
     </Disclosure>

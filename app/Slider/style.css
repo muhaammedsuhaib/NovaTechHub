@@ -35,7 +35,7 @@
   
   .logo_items {
     display: inline-block;
-    animation: 20s slides infinite linear;
+    animation: 180s slides infinite linear;
   }
   
   .logos:hover .logo_items {

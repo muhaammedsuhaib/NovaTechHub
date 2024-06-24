@@ -7,13 +7,9 @@ const LogoSlider = () => {
         <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-transparent to-white"></div>
         
         <div className="logo_items whitespace-nowrap animate-slides">
-          {[...Array(25)].map((data,index) => (
-            <img
-              key={index}
-              src="https://navneetdwivedi.github.io/Logo_Slider/logo.png"
-              alt="Logo"
-              className="inline-block max-h-16 mx-1"
-            />
+          {[...Array(95)].map((data,index) => (
+            <button key={index}  type="button"
+                  className="bg-gray-800 p-2 text-gray-400 hover:text-white hover:bg-slate-400">JavaScript </button>
           ))}
         </div>
       </div>

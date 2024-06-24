@@ -16,10 +16,10 @@ export default function Home() {
         <h1 className={styles.title}>NovaTechHub <br /> CodeMaster</h1>
 
         <div className="button-container mt-8">
-        <button className={`${styles.button} ml-6`}>
+        <a href="./Main"><button className={`${styles.button} ml-6`}  >
           <img src="/LogoBluebr.png" alt="Icon" className="w-10 h-10" />
-          <span className={styles.buttonText}>Get Started</span>
-        </button></div>
+          <span className={styles.buttonText} >Get Started</span>
+        </button></a></div>
       </div>
     </main>
   );
