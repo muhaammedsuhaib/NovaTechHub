@@ -9,7 +9,7 @@ const page = () => {
 
 
 
-  const [searchTerm, setSearchTerm] = useState<String>(""); // State to hold the search term
+  const [searchTerm, setSearchTerm] = useState<any>(""); // State to hold the search term
   const [selectedOption, setSelectedOption] = useState<String>("HTML"); // State to hold the selected dropdown option
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
