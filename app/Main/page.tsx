@@ -65,6 +65,7 @@ const page = () => {
       <option>HTML</option>
       <option>CSS</option>
       <option>JAVASCRIPT</option>
+      <option>BOOTSTRAP</option>
     </select>
   </div>
 </form>
