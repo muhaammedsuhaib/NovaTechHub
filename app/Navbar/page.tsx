@@ -12,12 +12,12 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const navigations = [
-  // { name: "Dashboard", href: "#", current: true },
-  // { name: "Team", href: "#", current: false },
-  // { name: "Projects", href: "#", current: false },
-  // { name: "Calendar", href: "#", current: false },
-];
+// const navigations = [
+//   { name: "Dashboard", href: "#", current: true },
+//   { name: "Team", href: "#", current: false },
+//   { name: "Projects", href: "#", current: false },
+//   { name: "Calendar", href: "#", current: false },
+// ];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -70,7 +70,7 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-4">
-                  {navigations.map((item) => (
+                  {/* {navigations.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
@@ -84,7 +84,7 @@ export default function Navbar() {
                     >
                       {item.name}
                     </a>
-                  ))}
+                  ))} */}
                   
                   {/* Search input with form submission */}
                   <form onSubmit={handleSubmit} className="relative w-72">
@@ -182,7 +182,7 @@ export default function Navbar() {
 
           <DisclosurePanel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigations.map((item) => (
+              {/* {navigations.map((item) => (
                 <DisclosureButton
                   key={item.name}
                   as="a"
@@ -197,7 +197,7 @@ export default function Navbar() {
                 >
                   {item.name}
                 </DisclosureButton>
-              ))}
+              ))} */}
             </div>
           </DisclosurePanel>
         </>
