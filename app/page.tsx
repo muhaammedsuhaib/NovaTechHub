@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -16,10 +17,10 @@ export default function Home() {
         <h1 className={styles.title}>NovaTechHub <br /> CodeMaster</h1>
 
         <div className="button-container mt-8">
-        <a href="./Main"><button className={`${styles.button} ml-6`}  >
+        <Link href="./Main"><button className={`${styles.button} ml-6`}  >
           <img src="/LogoBluebr.png" alt="Icon" className="w-10 h-10" />
           <span className={styles.buttonText} >Get Started</span>
-        </button></a></div>
+        </button></Link></div>
       </div>
     </main>
   );

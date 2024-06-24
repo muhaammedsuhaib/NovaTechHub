@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react"; // Import useState hook
+import { useState, useEffect } from "react"; // Import useState and useEffect hooks
 import {
   Disclosure,
   DisclosureButton,
@@ -42,6 +42,11 @@ export default function Navbar() {
     console.log("Search term:", searchTerm);
     // You can add more logic here, like redirecting to search results page or updating state
   };
+
+  useEffect(() => {
+    // Print the search term whenever the selected option changes
+    console.log("Search term:", searchTerm);
+  }, [selectedOption]);
 
   return (
     <Disclosure as="nav" className="bg-white">
