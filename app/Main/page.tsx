@@ -34,12 +34,17 @@ const Page: React.FC = () => {
   return (
     <>
       <Navbar />
-      <LogoSlider />
 
-      <main className="container w-full min-h-screen">
+      <main  className="container w-full min-h-screen"
+      style={{
+        backgroundImage: `url('/Laptop.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center', // Center the background image
+      }}>
+        <LogoSlider />
         <div className="text-center mx-auto">
           <h1 className={styles.title}>Build Coding Knowledge</h1>
-          <h6 className={styles.title1}>Through the Leading Online Developer</h6>
+          <h6 className={styles.title1}>At the Premier Web Development Hub</h6>
           <form onSubmit={handleSubmit} className="relative w-72 mx-auto">
             <div className="flex items-center border border-gray-300 rounded-md overflow-hidden">
               <input
