@@ -36,12 +36,12 @@ const Page: React.FC = () => {
       <Navbar />
       <LogoSlider />
 
-      <main  className="container-fluid w-full min-h-scree"
+      <main  className="container-fluid w-full min-h-scree bg-black h-[80vh]"
       style={{
-        backgroundImage: `url('/Laptop.png')`,
-        backgroundSize: 'auto',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'repeat'
+        // backgroundImage: `url('/Laptop.png')`,
+        // backgroundSize: 'auto',
+        // backgroundPosition: 'center',
+        // backgroundRepeat: 'repeat'
 
       }}>
         <div className="text-center mx-auto">

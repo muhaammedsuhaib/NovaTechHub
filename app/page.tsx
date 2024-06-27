@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main
-      className="container w-full min-h-screen"
+      className="container-fluid w-full min-h-screen"
       style={{
         backgroundImage: `url('/Home.png')`,
         backgroundSize: 'cover',

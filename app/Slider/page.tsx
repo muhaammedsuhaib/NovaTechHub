@@ -2,7 +2,7 @@
 import './style.css'
 const LogoSlider = () => {
     return (
-      <div className="logos relative overflow-hidden">
+      <div className="logos relative overflow-hidden bg-black">
         <div className="absolute top-0 left-0 w-16 h-full bg-transparent from-transparent to-white"></div>
         <div className="absolute top-0 right-0 w-16 h-full to-white"></div>
         
