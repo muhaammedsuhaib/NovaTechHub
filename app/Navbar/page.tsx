@@ -98,7 +98,7 @@ export default function Navbar() {
                       className="block w-full rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-1 mt-1"
                       placeholder="Search..."
                       value={searchTerm}
-                      onChange={handleSearchChange} // Update state as user types
+                      // onChange={handleSearchChange} // Update state as user types
                     />
                     <div className="absolute inset-y-0 right-0 flex items-center">
                       <select

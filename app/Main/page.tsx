@@ -34,14 +34,16 @@ const Page: React.FC = () => {
   return (
     <>
       <Navbar />
+      <LogoSlider />
 
-      <main  className="container w-full min-h-screen"
+      <main  className="container-fluid w-full min-h-scree"
       style={{
         backgroundImage: `url('/Laptop.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center', // Center the background image
+        backgroundSize: 'auto',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'repeat'
+
       }}>
-        <LogoSlider />
         <div className="text-center mx-auto">
           <h1 className={styles.title}>Build Coding Knowledge</h1>
           <h6 className={styles.title1}>At the Premier Web Development Hub</h6>
