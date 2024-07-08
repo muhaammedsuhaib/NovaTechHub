@@ -2,7 +2,6 @@
   .title {
     font-size: 3rem;
     font-weight: bold;
-    color: white;
     animation: slideInFromLeft 2s ease-out;
     padding: 15px;
     word-break: break-word;
@@ -10,7 +9,6 @@
   }
   .title1 {
     font-size: 2rem;
-    color: white;
     animation: slideInFromLeft 5s ease-out;
     padding: 20px;
     word-break: break-word;
@@ -130,4 +128,9 @@
   }
   .buttonText {
     animation: textFadeIn 2s ease-in-out;
+  }
+
+  .search-input{
+    background: red;
+    border-radius: 50px;
   }
