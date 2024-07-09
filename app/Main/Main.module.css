@@ -134,3 +134,10 @@
     background: red;
     border-radius: 50px;
   }
+
+
+
+
+  .suggetion::-webkit-scrollbar {
+    display: none;
+  }

@@ -79,12 +79,8 @@ export default function Navbar() {
                 </div>
                
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                
-
-
-
-                <Menu as="div" className="relative ml-3">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">  
+                  <Menu as="div" className="relative ml-3">
                   <div>
                     <MenuButton className="relative flex rounded-full  text-sm focus:outline-none">
                       <span className="absolute -inset-1.5" />
@@ -106,6 +102,7 @@ export default function Navbar() {
                         </a>
                       )}
                     </MenuItem>
+                    
                     <MenuItem>
                       {({ active }) => (
                         <a

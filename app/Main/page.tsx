@@ -50,7 +50,7 @@ const Main: React.FC = () => {
           <h1 className={styles.title} onClick={() => setMode(!mode)}>
             Build Coding Knowledge
           </h1>
-          <h6 className={styles.title1}>At the Premier Web Development Hub</h6>
+          <h6 className={`${styles.title1} font-bold`}>At the Premier Web Development Hub</h6>
           <form onSubmit={handleSubmit} className="relative w-72 mx-auto">
             <div
               className={`flex items-center  ${
@@ -58,19 +58,6 @@ const Main: React.FC = () => {
               }`}
               style={{borderRadius:'20px',width:'100%'}}
             >
-              {/* <input
-                type="text"
-                className="block w-full  text-sm leading-6 p-2 search-input"
-                placeholder="Search..."
-                value={searchTerm}
-                onChange={handleSearchChange}
-              /> */}
-              {/* <input type="text" className={` ${
-                mode ? "bg-slate-500 text-black" : "bg-white text-black"
-              }`}    value={searchTerm}
-                onChange={handleSearchChange}
-                placeholder="Search..."/> */}
-
 <input
           type="text"
           placeholder="Search..."
@@ -81,11 +68,11 @@ const Main: React.FC = () => {
                 
             </div>
             {searchTerm && (
-              <ul className="absolute z-10 w-full h-[200px] overflow-auto">
+              <ul className={`absolute z-10 w-full h-[200px] overflow-auto text-start ${styles.suggetion}`}>
                 {filteredTutorials.map((tutorial) => (
                   <li
                     key={tutorial._id}
-                    className="p-2 cursor-pointer hover:bg-gray-600"
+                    className={`p-2 cursor-pointer ${mode?'hover:bg-gray-200':'hover:text-black hover:bg-white'}`}
                     onClick={() => handleSuggestionClick(tutorial.title)}
                   >
                     {tutorial.title}
@@ -94,6 +81,7 @@ const Main: React.FC = () => {
               </ul>
             )}
           </form>
+          <h1 className={`underline mt-10 font-bold ${searchTerm&& 'hidden'}`}>Not Sure Where To Begin?</h1>
         </div>
       </div>
     </>
