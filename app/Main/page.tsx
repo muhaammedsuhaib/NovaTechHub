@@ -68,7 +68,7 @@ const Main: React.FC = () => {
                 
             </div>
             {searchTerm && (
-              <ul className={`absolute z-10 w-full h-[200px] overflow-auto text-start ${styles.suggetion}`}>
+              <ul className={`absolute z-10 w-full h-[200px] overflow-auto text-start ${styles.suggetion}`} >
                 {filteredTutorials.map((tutorial) => (
                   <li
                     key={tutorial._id}
@@ -81,7 +81,9 @@ const Main: React.FC = () => {
               </ul>
             )}
           </form>
+          <a href="/Tutorial">
           <h1 className={`underline mt-10 font-bold ${searchTerm&& 'hidden'}`}>Not Sure Where To Begin?</h1>
+          </a>
         </div>
       </div>
     </>
