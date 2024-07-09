@@ -3,7 +3,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-100%);
+      transform: translateX(-20%);
     }
   }
   
@@ -35,13 +35,19 @@
   
   .logo_items {
     display: inline-block;
-    animation: 180s slides infinite linear;
+    /* animation:6s slides infinite linear; */
   }
   
   .logos:hover .logo_items {
     animation-play-state: paused;
   }
   
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
   /* .logo_items img{
     height: 100px;
   } */
