@@ -5,13 +5,13 @@ import Navbar from '../Navbar/page';
 import LogoSlider from '../Slider/page';
 
 const Tutorial: React.FC = () => {
-  const { tutorial, mode, setMode } = useAppContext();
+  const { tutorial, mode, setMode,showTutorial,setshwoTutorial } = useAppContext();
 
-  console.log(tutorial,'werty');
   
   
-  const tuto = "JavaScript";
-  const getTutorial = tutorial.filter((tutorial) => tutorial.title === tuto);
+  
+
+  const getTutorial = tutorial.filter((tutorial) => tutorial.title === showTutorial);
   
   return (
     <>
